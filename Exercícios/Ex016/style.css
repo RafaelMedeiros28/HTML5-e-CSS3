@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Medidas absolutas
+cm, mm, in, px, pt, pc
+
+Medidas relativas
+em, ex, rem, vw vh, % */
+
+body{
+    background-image: linear-gradient(to right, #CEBEA3, #BFCCA8);
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(84, 76, 60, 0.774);
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1{
+    color: #AF9C7C;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(113, 101, 80);
+}
+
+h2{
+    color: #E9DFC7;
+    text-align: center;
+    text-shadow: 1px 1px 2px #7f7a6d;
+}
+
+p{
+    text-align: justify;
+}

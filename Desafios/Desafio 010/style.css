@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@font-face{
+    font-family: 'idroid.otf';
+    src: url(fontes/idroid.otf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+body{
+    background-color: #84E1AD;
+}
+
+header{
+    width: 600;
+    background-image: linear-gradient(#3CD681,#2DA060, #206F42);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 5px;
+    margin: 0px;
+    border-radius: 5px;
+}
+
+header > h1{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+  }
+header > h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+    padding-bottom: 20px;
+}
+header > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+    padding-bottom: 20px; 
+}
+.centro{
+    text-align: center;
+}
+
+nav{
+    padding: 0px;
+    margin: 0px;
+    border-radius: 5px;
+}
+
+nav > a{
+    color: #3cd17f;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.3;
+}
+
+nav > a:hover {
+    background-color: #164d2f ;
+    color: #a8d0ba ;
+  }
+
+  main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+section{
+    width: 500;
+    height: 500;
+}
+
+.fonte{
+    font-family: 'idroid.otf';
+    background-image: linear-gradient(to right, #84E1AD, white);
+    color: #206F42;
+}
+
+#Título{
+    font-family: 'idroid.otf';
+    font-size: 30px;
+    color: #206F42;
+}
+
+   
