@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+
+        thead{
+            background-color: black;
+            color: white;
+        }
+
+        tfoot{
+            background-color: black;
+            color: white;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: gray;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com tabelas grandes</h1>
+    <!--
+        ANATOMIA DAS GRANDES TABELAS
+        THEAD
+        TR, TD, TH
+        TBODY
+        TR, TD, TH, 
+        TFOOTER
+        TR, TD, TH
+    -->
+    <Table>
+        <caption>População dos Estados</caption>
+        <THead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+                <th>Porcentagem População</th>
+
+            </tr>
+        </THead>
+        <Tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>44 411 238</td>
+                <td>21,88%</td>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td>16 054 524</td>
+                    <td>7,91%</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>20 538 718</td>
+                    <td>10,11%</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santo</td>
+                    <td>3 833 712</td>
+                    <td>1,89%</td>
+                </tr>
+            </tr>
+        </Tbody>
+        <Tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td><strong>203 062 512</strong></td>
+
+            </tr>
+        </Tfoot>
+    </Table>
+</body>
+</html>
