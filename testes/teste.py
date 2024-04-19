@@ -10,6 +10,6 @@ def calcular_pi(num_pontos):
     
     return (dentro_circulo / num_pontos) * 4
 
-num_pontos = 10000000  # 1 bilhão de pontos
+num_pontos = 1000000  # 1 bilhão de pontos
 pi_aproximado = calcular_pi(num_pontos)
 print("Valor aproximado de pi:", pi_aproximado)
