@@ -53,6 +53,10 @@ input#button {
     
 }
 
+input#button:hover {
+    cursor: pointer;
+}
+
 .forma {
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 20px;
