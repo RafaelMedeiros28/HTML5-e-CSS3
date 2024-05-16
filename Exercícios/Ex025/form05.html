@@ -11,24 +11,56 @@
         <h1>Exemplo de formulário</h1>
     </header>
     <section>
-        <form action="cadastro.php" method="POST" autocomplete="on">
-            <p>
-                <label for="icor">Cor:</label>
-                <input type="color" name="Cor" id="icor">
-            </p>
-            <p>
-                <label for="inivel">Nível de satisfação:</label>
-                <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
-            </p>
-            <p>
-                <label for="ifoto">Foto do perfil:</label>
-                <input type="file" name="Foto" id="ifoto">
-            </p>
-            <p>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpar">
-            </p>
-        </form>
+        <div>
+            <form action="cadastro.php" method="POST" autocomplete="on">
+                <fieldset>
+                    <legend>Meu formulário</legend>
+                    <p>
+                        <label for="icor">Cor:</label>
+                        <input type="color" name="Cor" id="icor">
+                    </p>
+                    <p>
+                        <label for="inivel">Nível de satisfação:</label>
+                        <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+                    </p>
+                    <p>
+                        <label for="ifoto">Foto do perfil:</label>
+                        <input type="file" name="Foto" id="ifoto">
+                    </p>
+                    <p>
+                        <input class="click" type="submit" value="Enviar">
+                        <input class="click" type="reset" value="Limpar">
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+        <div id="div2">
+            <form action="cadastro.php" method="POST">
+                <fieldset id="linha">
+                    <legend>Meu segundo Formulário</legend>
+                    <p>
+                        <label for="inome">Nome: </label>
+                        <input type="text" name="nome" id="inome" placeholder="nome">
+                    </p>
+                    <p>
+                        <label for="iage">Idade:</label>
+                        <input type="number" name="age" id="iage" placeholder="idade">
+                    </p>
+                        <fieldset>
+                            <legend>Sexo</legend>
+                            <label for="imasc">Masculino</label>
+                            <input type="radio" name="sexo" id="imasc">
+                            <label for="ifem">Feminino</label>
+                            <input type="radio" name="sexo" id="ifem">
+                        </fieldset>
+                        <p>
+                            <input class="click" type="submit" value="Enviar">
+                            <input class="click"  type="reset" value="Limpar">
+                        </p>
+                </fieldset>
+            </form>
+
+        </div>
     </section>
     <footer>
         <p>&copy; Feito por Rafael Medeiros</p>
