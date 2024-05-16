@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu formulário</h1>
+    </header>
+    <section>
+        <div>
+            <form id="Meu-Form" method="POST" autocomplete="on" onsubmit="return clicar(event)">
+                <p>
+                    <label for="inum1">Digite um número:</label>
+                    <input type="number" name="num1" id="inum1" min="0" max="50" required>
+                </p>
+                <p>
+                    <label for="inum2">Digite outro número: </label>
+                    <input type="number" name="num2" id="inum2" min="0" max="50" required>
+                </p>
+                <p>
+                    <input class="click" type="submit" value="Somar">
+                    <input class="click" type="reset" value="Limpar">
+                </p>
+            </form>
+        </div>
+        <div id="div2" class="res">
+        </div>
+    </section>
+    <footer>&copy; Feito por Rafael Medeiros</footer>
+    <script>
+        function clicar(event) {
+            event.preventDefault(); // Previne o comportamento padrão de envio do formulário
+            var n1 = document.getElementById('inum1').value;
+            var n2 = document.getElementById('inum2').value;
+            var res = document.getElementById('div2');
+            var num1 = parseFloat(n1);
+            var num2 = parseFloat(n2);
+
+            if (isNaN(num1) || isNaN(num2)) {
+                res.innerHTML = "Por favor, insira números válidos.";
+            } else {
+                var s = num1 + num2;
+                res.innerHTML = `A soma entre ${num1} e ${num2} é igual a ${s}`;
+            }
+        }
+    </script>
+</body>
+</html>
