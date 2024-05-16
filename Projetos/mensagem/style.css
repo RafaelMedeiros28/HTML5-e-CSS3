@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    color: rgba(211, 211, 211, 0.623);
+}
+
+/* #0074BA  #303642 */
+
+body {
+    padding-top: 100px;
+    background-color: #282A37;
+}
+
+section {
+    align-content: top left;
+    background-color: #282A37;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+textarea#mensagem {
+    padding: 8px;
+    margin-top: 10px;
+    width: 400px;
+    height: 200px;
+    border: 2px solid #0073B8;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: white
+    
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background-color: #303642; /* Cor de fundo da caixa */
+    border: 1px solid #303642; /* Cor da borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bolder;
+}
+
+input#enviar {
+    padding: 12px;
+    margin-top: 3px;
+    font-weight: bolder;
+    color: white;
+    background-color: #0073B8;
+    border: 1px solid #0073B8;
+    border-radius: 20px;
+
+}
+
+input#enviar:hover {
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    background-color: #303642; /* Cor de fundo da caixa */
+    border: 1px solid #0073B8; /* Cor da borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bolder;
+}
