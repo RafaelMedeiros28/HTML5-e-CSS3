@@ -4,6 +4,7 @@ div.container {
     background-color: lightsalmon;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 div.item {
@@ -12,4 +13,5 @@ div.item {
     text-align: center;
     padding: 30px;
     margin: 10px;
+    flex: auto;
 }
