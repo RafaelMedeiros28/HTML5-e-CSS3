@@ -8,19 +8,65 @@
 </head>
 <body>
     <header>
-        <h1>Usando Flexbox</h1>
-    </header>
-        <div class="container">
-            <div class="item">A</div>
-            <div class="item">B</div>
-            <div class="item">C</div>
-            <div class="item">D</div>
-            <div class="item">E</div>
-            <div class="item">F</div>
-            <div class="item">G</div>
-            <div class="item">H</div>
+        <h1 id="titulo">Minhas bandas favoritas</h1>
+        <!-- Ícone do menu hamburguer -->
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
-    </section>
+
+        <!-- Menu hamburguer -->
+        <nav class="menu">
+            <div class="menu-links">
+                <button class="close-btn" onclick="toggleMenu()">X</button>
+                <a href="#" class="link">Início</a>
+                <a href="#" class="link">Contato</a>
+                <a href="#" class="link">Eventos</a>
+                <a href="#" class="link">Fotos</a>
+                <a href="#" class="link">Configurações</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="item">
+            <iframe src="https://kornofficial.com/" width="150" height="150" scrolling="no"></iframe>
+        </div>
+        <div class="item">
+            <iframe src="https://slipknot1.com/" width="150" height="150" scrolling="no"></iframe>
+        </div>
+        <div class="item">
+            <iframe src="https://fromzero.linkinpark.com/" width="150" height="150" scrolling="no"></iframe>
+        </div>
+        <div class="item">
+            <iframe src="https://limpbizkit.com/" width="150" height="150" scrolling="no"></iframe>
+        </div>
+        <div class="item">
+            <iframe src="https://www.evanescence.com/home/" width="150" height="150" scrolling="no"></iframe>
+        </div>
+        <div class="item">
+            <iframe src="https://systemofadown.com/" width="150" height="150" scrolling="no"></iframe>
+        </div>
+        <div class="item">
+            <iframe src="https://www.vagalume.com.br/deftones/" width="150" height="150" scrolling="no"></iframe>
+        </div>
+        <div class="item">
+            <iframe src="https://www.fnm.com/" width="150" height="150" scrolling="no"></iframe>
+        </div>
+    </div>
     
+    <footer class="container">
+        <div id="footer">
+            <p><strong>Este é o rodapé.</strong></p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('menu-active');
+        }
+    </script>
 </body>
 </html>
